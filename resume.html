@@ -320,8 +320,8 @@
     @media print {
       body { padding: 0; background: #fff; }
       .resume { box-shadow: none; border-radius: 0; border: none; max-width: 100%; margin: 0; padding: 12px; }
-      .print-button, .controls { display: none !important; }
-      a::after { content: " (" attr(href) ")"; font-size: 10px; color: #000; }
+      .print-fab, .print-button, .controls { display: none !important; }
+      a::after { content: none !important; }
       @page { size: A4; margin: 12mm; }
       -webkit-print-color-adjust: exact;
     }
@@ -371,7 +371,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="education">
       <div class="section-header"><h2>Education</h2></div>
       <div class="section-content">
         <div class="item">
@@ -530,7 +530,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="certifications">
       <div class="section-header"><h2>Certifications</h2></div>
       <div class="section-content">
         <div class="item">
